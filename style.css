@@ -1,0 +1,250 @@
+/* Reset & Common Codes */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    list-style-type: none;
+
+    /* font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Bree Serif', serif; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+button {
+    padding: 10px;
+    color: white;
+    background-color: brown;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: 'Bree Serif', serif;
+    font-size: 1rem;
+    width: 120px;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+header{
+    font-family: 'Bree Serif', serif;
+    background: url('https://www.pngall.com/wp-content/uploads/2016/03/Food-Free-Download-PNG.png') no-repeat center fixed;
+    /* width: 100%;
+    height: auto; */
+}
+
+.nav-bar{
+    background-color: #222;
+    padding: 20px;
+    position: sticky;
+}
+
+.nav-bar .main-link{
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bolder;
+    margin: 10px;
+    color: white;
+    padding: 2px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.nav-bar .main-link:hover{
+    background-color: white;
+    color: black;
+}
+
+.nav-bar .pizza{
+    color: white;
+}
+
+.pizza{
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+/* Heading */
+.heading{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+.heading h1, p, button{
+    color: black;
+    margin: 10px;
+}
+
+.heading h1{
+    font-size: 2rem;
+}
+
+.heading p{
+    max-width: 75%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+/* Our Services */
+.services{
+    font-family: 'Bree Serif', serif;
+    padding: 10px;
+}
+
+.services h1 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.services .cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.services .cards .card{
+    border: 5px solid brown;
+    border-radius: 15px;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: wheat;
+}
+
+.services .cards .card h6{
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.services .cards .card img{
+    height: 100px;
+    width: auto;
+    margin: 10px;
+}
+
+/* Our Clients */
+.clients{
+    background-color: white;
+}
+
+.clients h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 1.8rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.client-images{
+    text-align: center;
+}
+
+.client-images img{
+    height: 85px;
+    width: auto;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Contact Us */
+.contact h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 1.8rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.contact form{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 50%;
+}
+
+.contact form label{
+    font-family: 'Bree Serif', serif;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.contact form input{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 500px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1rem;
+}
+
+.contact form textarea{
+    resize: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 500px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Baloo Bhai 2', cursive
+}
+
+.contact form input::placeholder{
+    font-size: 1rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.contact form textarea::placeholder{
+    font-size: 1rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p{
+    font-size: 1rem;
+    font-family: 'Bree Serif', serif;
+    color: white;
+}
+
+/* 1200px and less */
+@media screen and (max-width: 1200px){
+    .services .cards {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0 auto;
+    }
+
+    .contact form {
+        text-align: left;
+    }
+}
+
+/* 800px and less */
+@media screen and (max-width: 800px){
+    .services .cards{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+/* 700px and less */
+@media screen and (max-width: 700px){
+    .contact form{
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .contact form input{
+        width: 450px;
+    }
+
+    .contact form textarea{
+        width: 450px;
+    }
+}
